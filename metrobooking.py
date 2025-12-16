@@ -5,7 +5,6 @@ import qrcode
 from io import BytesIO
 import uuid
 from PIL import Image
-from gtts import gTTS
 import base64
 
 def generate_qr(data):
@@ -52,6 +51,7 @@ else:
     st.write(f"**tickets**:{no_tickets}")
     st.write(f"**amount paid**:{total_amount}")
     st.image(qr_bytes,width=250)
+
 
 
 
