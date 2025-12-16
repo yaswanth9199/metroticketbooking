@@ -1,7 +1,7 @@
 #metro ticket booking app
 
 import streamlit as st
-import qrcode
+import qrcode[pil]
 from io import BytesIO
 import uuid
 from PIL import Image
@@ -51,5 +51,6 @@ else:
     st.write(f"**tickets**:{no_tickets}")
     st.write(f"**amount paid**:{total_amount}")
     st.image(qr_bytes,width=250)
+
 
 
